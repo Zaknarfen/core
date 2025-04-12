@@ -1233,7 +1233,7 @@ export default class DataManager {
         !this.columns.some((columnDef) => columnDef.tableData.filterValue)
       ) {
         if (rowData.tableData.isTreeExpanded === undefined) {
-          let isExpanded = false;
+          const isExpanded = false;
           switch (typeof this.defaultExpanded) {
             case 'boolean':
               isDefaultExpanded = this.defaultExpanded;
